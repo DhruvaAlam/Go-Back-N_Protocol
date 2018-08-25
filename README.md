@@ -14,7 +14,8 @@ network errors, such as packet loss and duplicate packets.
 3. Run:  
    >make   
 4. Obtain 4 different port numbers using the following terminal command 4 times:
-    > python -c 'import socket; s=socket.socket(); s.bind(("", 0)); print(s.getsockname()[1]); s.close()'  
+    > python -c 'import socket; s=socket.socket(); s.bind(("", 0)); print(s.getsockname()[1]); s.close()'   
+
     let  
         9991 -> first port number  
         9992 -> second port number  
@@ -24,6 +25,7 @@ network errors, such as packet loss and duplicate packets.
 5. For the following commands, replace hosts and port numbers with their corresponding values.
 6. On host1 (terminal window 1), Run:
     > ./nEmulator-linux386 9991 host2 9994 9993 host3 9992 1 0.2 0  
+
     Refer to the assignment pdf to change how the behavior of nEmulator-linux386  
 
 7. On host2 (terminal window 2), Run the following with the specified output file name  
